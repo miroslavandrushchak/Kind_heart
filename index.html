@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Kind heart</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style 1.css" type="text/css">
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/preloader.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+  <header data-wow-duration="2s" class="header wow animate__animated animate__fadeInTopLeft">
+    <a href="index.html"><img src="images/Logo.svg" alt="Reload" class="mini_logo"></a>
+    <div class="language">
+      <a href="#bottom" class="language_change">УКР</a> <a href="#bottom" class="language_change">РУС</a> <a
+        href="#bottom" class="language_change">ENG</a>
+    </div>
+    <div data-wow-duration="1.5s" class="about_site wow animate__animated animate__fadeInTopRight">
+      <a href="projects.html" class="about_site_buttons">Проекти</a> <a href="#" class="about_site_buttons">Архів</a>
+      <a href="#" class="about_site_buttons">Контакти</a> <a href="#" class="urgent_help"
+        class="about_site_buttons">Термінова
+        допомога</a>
+    </div>
+
+    <div class="user">
+      <a class="login">Вхід</a>
+      <a>|</a>
+      <a class="registration">Зареєструватися</a>
+    </div>
+
+    <div class="progress_bar" id="progress"></div>
+  </header>
+
+  <div class="login_popup">
+    <form class="login_popup_form">
+      <h2 class="close_login_window">Закрити</h2>
+      <h2 class="login_text">Вхід</h2>
+      <div class="data_block">
+        <img src="images/Logo.svg" alt="Welcome" class="mini_logo_in_login_form" width="100px">
+        <label class="label_1">
+          <input type="text" name="users_login">
+          <div class="label_of_data">
+            Логін
+          </div>
+        </label>
+        <br>
+        <label class="label_1">
+          <input type="password" name="users_password">
+          <div class="label_of_data">
+            Пароль
+          </div>
+        </label>
+      </div>
+      <button type="submit" class="data_submit">Увійти</button>
+    </form>
+  </div>
+
+  <div class="registration_popup">
+    <form class="registration_popup_form" type="submit">
+      <h2 class="close_registration_window">Закрити</h2>
+      <h2 class="registration_text">Реєстрація</h2>
+      <div class="new_data_block">
+        <img src="images/Logo.svg" alt="Welcome" class="mini_logo_in_registration_form" width="250px">
+        <label class="label_1">
+          <input type="email" name="new_users_contact">
+          <div class="label_of_new_data">
+            Електронна пошта або номер телефону
+          </div>
+        </label>
+        <br>
+        <label class="label_1">
+          <input type="text" name="new_users_login">
+          <div class="label_of_new_data">
+            Логін
+          </div>
+        </label>
+        <br>
+        <label class="label_1">
+          <input type="password" name="new_users_password">
+          <div class="label_of_new_data">
+            Пароль
+          </div>
+        </label>
+      </div>
+      <button type="submit" class="new_data_submit">Зареєструватися</button>
+    </form>
+  </div>
+
+  <div data-wow-duration="2.5s" class="wow animate__animated animate__fadeInRight"><img src="images/Heart isometry.svg"
+      alt="" class="general_logo"></div>
+
+  <div data-wow-duration="1.75s" class="general_text wow animate__animated animate__fadeInLeft">
+
+    <h1 id="h1">Добре серце</h1>
+    <h6 class="about_project">Докладніше про проект: <a href="#" class="transition_button"><img
+          src="images/How you can help.svg" alt=""></a></h6>
+    <p>Вже зараз Ви можете допомогти тим, хто потребує допомоги</p>
+    <h6 class="how_you_can_help">Як Ви можете допомогти?<a href="#"><img src="images/How you can help.svg"
+          alt="Допомогти зараз" class="transition_button"></a><a href="#" class="help_now">Допомогти вже зараз</a>
+    </h6>
+    <div class="project">
+      <p>Якщо Вам неохідна допомога, додайте проект</p>
+      <h6 class="add_project">Додати проект:<a href="#"><img src="images/Add project.svg" class="transition_button"></a>
+      </h6>
+    </div>
+  </div>
+
+  <div class="chat_block">
+    <a class="chat"><img src="images/Chat.svg"></a>
+  </div>
+
+  <div class="chat_popup">
+    <form class="chat_popup_form">
+      <h4 class="close_chat_window">Закрити</h4>
+      <div class="message_block">
+        <label class="label_2">
+          <textarea type="text" name="message"></textarea>
+          <div class="label_of_message">
+            Напишіть повідомлення
+          </div>
+        </label>
+      </div>
+      <button type="submit" class="message_submit">Написати</button>
+    </form>
+  </div>
+
+  <footer data-wow-duration="1s" class="repost wow animate__animated animate__fadeInLeft">
+
+    <h6>Розповісти всім:
+      <a href="https://vk.com/#wall"><img src="images/VKontakte.svg" alt="VK" class="media_button"></a>
+      <a href="https://twitter.com/home"><img src="images/Twitter.svg" alt="Twitter" class="media_button"></a>
+      <a href="https://facebook.com/#page/posts"><img src="images/Facebook.svg" alt="Facebook" class="media_button"></a>
+    </h6>
+  </footer>
+
+</body>
+
+<script src="scripts/main.js"></script>
+<script src="scripts/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+
+</html>
